@@ -5,13 +5,16 @@ Implement a function processRequests(reservations, requests, totalRooms) that, g
 
 reservations:
 2d array, containing all approved reservations. The structure of the array is as follows:
+
 [
   [start, end, quantity],
   [start, end, quantity]
   ....
 ]
+
 requests:
 2d array, containing all reservation requests. The structure of the array is as follows:
+
 [
   [start, end, quantity],
   [start, end, quantity]
