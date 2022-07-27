@@ -21,10 +21,15 @@ requests:
   ....
 ]
 
+
 totalRooms: Total rooms in the hotel (integer)
+
 start: Day of month, 1 to 30 (integer)
+
 end: Day of month, 1 to 30 (integer)
+
 quantity: Number of rooms requested (integer)
+
 
 Assume that all reservations have reached within one month, and all rooms have the same capacity. The order of the reservation requests is also kept relative to the arrival time, so the zero index request is the oldest request in requests array.
 Note: While processing a request, you must consider previously approved requests, check example 2 for detail.
@@ -32,19 +37,26 @@ Note: While processing a request, you must consider previously approved requests
 Example 1:
 
 reservations:
+
 {
   {04, 06, 02},
   {15, 20, 10}
 }
+
 requests:
+
 {
   {03, 05, 05},
   {15, 20, 06},
   {25, 28, 06}
 }
+
+
 totalRooms: 15
 
+
 Resultant Array -> {1, 0, 1}
+
 
 Explanation:
 In above example, total rooms available in the hotel are 15. Two reservations are already approved, i.e, initially two rooms are booked from 4 to 6 and 10 rooms are booked from 15 to 20.
@@ -63,15 +75,19 @@ Example 2:
 
 
 reservations:
+
 {
   {04, 06, 10},
   {15, 20, 10}
 }
+
 requests:
+
 {
   {05, 06, 05},
   {06, 09, 01}
 }
+
 totalRooms: 15
 
 Resultant Array -> {1, 0}
