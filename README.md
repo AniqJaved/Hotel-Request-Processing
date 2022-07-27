@@ -8,6 +8,7 @@ reservations:
 
 [
   [start, end, quantity],
+  
   [start, end, quantity]
   ....
 ]
@@ -17,7 +18,9 @@ requests:
 
 [
   [start, end, quantity],
+  
   [start, end, quantity]
+  
   ....
 ]
 
@@ -40,6 +43,7 @@ reservations:
 
 {
   {04, 06, 02},
+  
   {15, 20, 10}
 }
 
@@ -47,8 +51,11 @@ requests:
 
 {
   {03, 05, 05},
+  
   {15, 20, 06},
+  
   {25, 28, 06}
+  
 }
 
 
@@ -59,15 +66,19 @@ Resultant Array -> {1, 0, 1}
 
 
 Explanation:
+
 In above example, total rooms available in the hotel are 15. Two reservations are already approved, i.e, initially two rooms are booked from 4 to 6 and 10 rooms are booked from 15 to 20.
 
 request 1: {03, 05, 05}
+
 A user requests 5 rooms from 3 to 5, based on approved bookings at current state, we have a maximum of 13 rooms available for the duration of 3 to 5, so the request will be approved.
 
 request 2: {15, 20, 06}
+
 Only 5 rooms are available for a period of 15 to 20, therefore the request will be rejected.
 
 request 3: {25, 28, 06}
+
 All 15 rooms are available for the duration of 25 to 28, so the request will be approved.
 
 
@@ -77,15 +88,20 @@ Example 2:
 reservations:
 
 {
+
   {04, 06, 10},
+  
   {15, 20, 10}
+  
 }
 
 requests:
 
 {
   {05, 06, 05},
+  
   {06, 09, 01}
+  
 }
 
 totalRooms: 15
@@ -94,10 +110,13 @@ Resultant Array -> {1, 0}
 
 
 Explanation:
+
 Total rooms available in the hotel are 15. Two reservations are already approved, i.e, initially 10 rooms are booked from 4 to 6 and 10 rooms are booked from 15 to 20.
 
 request 1: {05, 06, 05}
+
 Based on approved bookings, we have a maximum of 5 rooms available for the duration of 5 to 6, so the request will be approved.
 
 request 2: {06, 09, 01}
+
 No rooms available on day 06, due to previously approved booking request, so the request will be rejected.
